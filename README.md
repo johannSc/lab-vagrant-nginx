@@ -29,12 +29,11 @@ apt install vagrant
 touch Vagrantfile
 ```
 Y intégrer le contenu du Vagrantfile présent sous le repo
-```
 
+```
 touch deploy.sh
 ```
 Y intégrer le contenu du deploy.sh présent sous le repo
-```
 
 ## Déploiement VMs
 
