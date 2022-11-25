@@ -84,3 +84,8 @@ pour cibler une machine:
 ssh -p 2202 vagrant@localhost
 (mdp vagrant)
 ```
+Arrêt / suppression VMs
+```
+sudo vagrant halt nom_vm
+sudo vagrant destroy nom_vm
+```
