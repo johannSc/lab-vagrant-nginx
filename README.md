@@ -73,3 +73,8 @@ Vagrantfile_liste
 Les deux effectues les mêmes actions
 - Le premier est une boucle qui appel le nombres de VMs demandées
 - Le second est une liste de chaque VM, plus long mais peut être personnalisé (différentes options selon les VMs)
+
+Pour lister les vms actives sous virtualbox:
+```
+VBoxManage list runningvms
+```
