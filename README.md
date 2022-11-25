@@ -24,11 +24,8 @@ sudo apt install linux-headers-$(uname -r) dkms
 ```
 apt install vagrant
 ```
-Copier les fichiers nécessaires pour le tp présents dans le répertoire files du repo git
-```
-cp deploy.sh
-cp Vagrantfile
-```
+Depuis le répertoire files du repo git:
+Copier le deploy.sh dans le répertoire courant
 
 ## Déploiement VMs
 
@@ -44,7 +41,8 @@ On liste les images
 ```
 vagrant box list
 ```
-Modification du Vagrantfile selon
+Depuis le répertoire files du repo git:
+Copier le contenu du Vagrantfile dans celui qui vient d'être créé
 
 Lancement de la machine virtuelle:
 ```
@@ -60,3 +58,13 @@ Vérification du déploiement de Nginx:
 ```
 wget -qO- localhost
 ```
+
+## Déploiement multiples
+Au lieu de copier le Vagrantfile du repo, copiez le contenu de
+Vagrantfile_boucle
+ou
+Vagrantfile_liste
+
+Les deux effectues les mêmes actions
+- Le premier est une boucle qui appel le nombres de VMs demandées
+- Le second est une liste de chaque VM, plus long mais peut être personnalisé (différentes options selon les VMs)
