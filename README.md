@@ -36,7 +36,7 @@ https://app.vagrantup.com/generic/boxes/debian10
 
 Déploiment local
 ```
-vagrant box debian10 /path/to/image.box
+vagrant box add debian10 /path/to/image.box
 vagrant init debian10
 ```
 On liste les images
