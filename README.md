@@ -2,6 +2,7 @@
 
 - [Installation du lab](#installation-du-lab)
 - [Déploiement VMs](#déploiement-vms)
+- [Déploiement multiples](#déploiement-multiples)
 
 ## Installation du lab
 
