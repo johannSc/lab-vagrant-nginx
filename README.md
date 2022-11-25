@@ -32,7 +32,7 @@ Copier le deploy.sh dans le répertoire courant
 
 Téléchargement de l'ISO:
 https://app.vagrantup.com/generic/boxes/debian10
-renommer l'image téléchargée en debian10.box
+(renommer l'image téléchargée en debian10.box)
 
 Déploiment local
 ```
