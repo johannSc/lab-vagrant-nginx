@@ -25,6 +25,9 @@ sudo apt install linux-headers-$(uname -r) dkms
 ```
 sudo apt install vagrant
 ```
+ou pour avoir la dernière version:
+https://developer.hashicorp.com/vagrant/downloads
+
 Depuis le répertoire files du repo git:
 Copier le deploy.sh dans le répertoire courant
 
