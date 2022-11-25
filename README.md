@@ -14,7 +14,7 @@ apt install virtualbox 7.0
 
 par le paquet au préalable téléchargé
 ```
-dpkg -i nom_du_paquet.deb
+sudo dpkg -i nom_du_paquet.deb
 ```
 => si problème lors du chargement dans le kernel de vb, installer le paquet 
 ```
@@ -23,7 +23,7 @@ sudo apt install linux-headers-$(uname -r) dkms
 
 ### Vagrant: installation
 ```
-apt install vagrant
+sudo apt install vagrant
 ```
 Depuis le répertoire files du repo git:
 Copier le deploy.sh dans le répertoire courant
