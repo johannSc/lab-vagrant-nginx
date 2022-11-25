@@ -24,33 +24,39 @@ sudo apt install linux-headers-$(uname -r) dkms
 ```
 apt install vagrant
 ```
-
+Copier les fichiers nécessaires pour le tp présents dans le répertoire files du repo git
 ```
-touch Vagrantfile
+cp deploy.sh
+cp Vagrantfile
 ```
-Y intégrer le contenu du Vagrantfile présent sous le repo
-
-```
-touch deploy.sh
-```
-Y intégrer le contenu du deploy.sh présent sous le repo
 
 ## Déploiement VMs
 
+Téléchargement de l'ISO:
+https://app.vagrantup.com/generic/boxes/debian10
+
+Déploiment local
+```
+vagrant box debian10 /path/to/image.box
+vagrant init debian10
+```
+On liste les images
+```
+vagrant box list
+```
+Modification du Vagrantfile selon
+
 Lancement de la machine virtuelle:
 ```
-sudo vagrant up --provider virtualbox
+sudo vagrant up
 ```
 
 puis connexion à la VM:
 ```
-vagrant ssh
+sudo vagrant ssh
 ```
 
 Vérification du déploiement de Nginx:
 ```
 wget -qO- localhost
 ```
-
-Il est possible de télécharger une image vagrant (.box) au préalable et ensuite de l'installer:
-
