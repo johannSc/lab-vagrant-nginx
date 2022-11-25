@@ -78,12 +78,18 @@ Pour lister les vms actives sous virtualbox:
 ```
 VBoxManage list runningvms
 ```
-Pour se connecter en ssh, il faut cibler les ports indiqués pour chaque vms (ici 2200, 2201, 2202)
+Pour se connecter en ssh:
+```
+vagrant ssh nom_vm
+```
+
+sinon possibilité de cibler les ports indiqués pour chaque vms (ici 2200, 2201, 2202)
 pour cibler une machine:
 ```
 ssh -p 2202 vagrant@localhost
 (mdp vagrant)
 ```
+
 Arrêt / suppression VMs
 ```
 sudo vagrant halt nom_vm
