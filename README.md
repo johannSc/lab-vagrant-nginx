@@ -52,4 +52,5 @@ Vérification du déploiement de Nginx:
 wget -qO- localhost
 ```
 
-Si souhaité, ajout au Vagrant file du portforwarding de la VM; config.vm.network "forwarded_port", guest: 80, host: 8080, id: "nginx"
+Il est possible de télécharger une image vagrant (.box) au préalable et ensuite de l'installer:
+
