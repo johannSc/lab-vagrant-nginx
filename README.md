@@ -32,8 +32,10 @@ Depuis le répertoire files du repo git:
 Copier le deploy.sh dans le répertoire courant
 
 ## Déploiement VMs
+Déploiement depuis le Cloud Vagrant: informations indiquées sur l'image concernées,
+exemple:https://app.vagrantup.com/generic/boxes/debian10
 
-Téléchargement de l'ISO:
+OU déploiement local, téléchargement de l'ISO:
 https://app.vagrantup.com/generic/boxes/debian10
 (renommer l'image téléchargée en debian10.box)
 
