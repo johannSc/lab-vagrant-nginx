@@ -3,6 +3,7 @@
 - [Installation du lab](#installation-du-lab)
 - [Déploiement VMs](#déploiement-vms)
 - [Déploiement multiples](#déploiement-multiples)
+- [Pour aller plus loin](#pour-aller-plus-loin)
 
 ## Installation du lab
 
@@ -27,9 +28,6 @@ sudo apt install vagrant
 ```
 ou pour avoir la dernière version:
 https://developer.hashicorp.com/vagrant/downloads
-
-Depuis le répertoire files du repo git:
-Copier le deploy.sh dans le répertoire courant
 
 ## Déploiement VMs
 Déploiement depuis le Cloud Vagrant: informations indiquées sur l'image concernées,
@@ -92,4 +90,25 @@ Arrêt / suppression VMs
 ```
 sudo vagrant halt nom_vm
 sudo vagrant destroy nom_vm
+```
+
+## Pour aller plus loin
+
+### Paramétrer une page d'accueil par serveur:
+
+=> le fait de déposer un fichier dans le répertoire courant (le même ou se trouve le Vagrantfile) il sera automatique disponible sous la VM sous le répertoire /vagrant
+
+```
+touch index.html (puis on y insère le contenu souhaité)
+```
+Et dans le Vagrantfile, rajoutez lors du déploiement des scripts:
+
+```
+ # déploiement de l'index, exemple site 1   
+    config.vm.provision "shell", inline: <<-SHELL
+        rm /etc/nginx/sites-enable/*
+        cp /vagrant/index.html /etc/nginx/sites-enable/
+        sed -i 's/site/site1/g' /etc/nginx/sites-enable/index.html 
+        service nginx restart
+    SHELL
 ```
