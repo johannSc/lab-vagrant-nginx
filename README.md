@@ -112,3 +112,11 @@ Et dans le Vagrantfile, rajoutez lors du déploiement des scripts:
         service nginx restart
     SHELL
 ```
+
+Permettre un espace d'échange entre la machine hôte et les vms:
+
+
+```
+config.vm.synced_folder ".", "/var/tmp"
+
+```
